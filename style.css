@@ -1,0 +1,118 @@
+*{
+    box-sizing:border-box;   
+}
+
+body{
+    background-color: #47adf1c7;
+}
+
+:root{
+    --primary-color: rgb(67, 123, 243);
+    --second-color: #fefffd;
+    --card-width: 400px;
+    --main-color: white;
+    --bord-radius: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: var(--card-width);
+    margin: 50px auto;
+}
+
+.mainText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    margin-top: 15px;
+    font-size: 38pt;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.stringTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-color);
+    max-width: var(--card-width);
+    border-radius: var(--bord-radius);
+    margin-bottom: 30px;
+}
+
+input[type="text"]{
+    text-transform: uppercase;
+    background-color: var(--main-color);
+    font-size: 18pt;
+    border: 0;
+    border-radius: var(--bord-radius);
+    margin: 5px;
+}
+
+#addTask{
+    text-transform: uppercase;
+    background-color: var(--primary-color);
+    font-size: 18pt;
+    border: 0;
+    border-radius: var(--bord-radius);
+    margin: 5px;
+}
+
+/*Стили для списка таск */
+
+.newLabel{
+    display: flex;
+    flex-flow: row;
+    border-bottom: 2px solid rgb(187, 185, 185);
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-color);
+    border-radius: var(--bord-radius);
+    overflow: hidden;
+}
+p{
+    font-size: 16pt;
+    padding-left: 15px;
+}
+.basket{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    background-image: url(http://s1.iconbird.com/ico/2013/12/505/w450h4001385925290Delete.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: translateX(40px);
+    transition: transform 0.5s;
+    border: none;
+    background-color: var(--main-color);
+}
+.basket:hover{
+    transform: translateX(0px);
+    transition: transform 0.5s;
+}
+
+/* Нижние кнопки */
+.buttonInput{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background-color: var(--main-color);
+    border-radius: var(--bord-radius);
+
+}
+button{
+    max-width: var(--card-width);
+    background-color: var(--primary-color);
+    font-size: 14pt;
+    font-weight: 400;
+    color: var(--main-color);
+    margin: 15px 0 15px 0;
+    border-radius: 5px;
+}
